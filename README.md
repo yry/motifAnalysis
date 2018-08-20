@@ -3,7 +3,8 @@ identification of shared motifs on a subset of genes, with an enrichment test ag
 
 Algorithm (pseudocode)
 
-Input: * a full set of transcripts (e.g. genes, promoters, 5' UTRs, 3' UTRs) and a subset
+Input: 
+* a full set of transcripts (e.g. genes, promoters, 5' UTRs, 3' UTRs) and a subset
 the subset could be a set of genes forming a pathway, or a set of genes co-expressed
 to ensure a meaningful significance analysis, use a subset with at least 10 transcripts
 * an annotation set used for annotating the motifs (e.g. a list of annotated miRNAs or transcription factors)
