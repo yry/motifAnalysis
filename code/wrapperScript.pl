@@ -22,13 +22,13 @@ $anno    = shift or die $usage;
 ##motif based analysis in Perl
 ##system call on the external Perl script
 print "perl windowCounting.pl $fullset $subset $wmin $wmax\n";
-#system("perl windowCounting.pl $fullset $subset $wmin $wmax");
+system("perl windowCounting.pl $fullset $subset $wmin $wmax");
 
 ##enrichment analysis using a Fisher exact test
 ##the output consits of entries with p.val < 0.05
 #print "executing the R script with the enrichment component\n";
 print "Rscript enrichmentAnalysis.R $wmin $wmax $pval\n";
-#system("Rscript enrichmentAnalysis.R $wmin $wmax $pval");
+system("Rscript enrichmentAnalysis.R $wmin $wmax $pval");
 
 ##attach annotations and organize outputs
 print "perl attachAnnotation.pl $anno $wmin $wmax $subset\n";
